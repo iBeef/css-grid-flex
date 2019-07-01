@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="X-UdCompatible" content="ie=edge">
     <title>Acme Web Solutions</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -11,9 +11,11 @@
     <!-- Header Showcase -->
     <header id="showcase" class="grid">
         <div class="bgImage"></div>
-        <h1>Welcome to Acme Web Solutions</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia temporibus rem officiis sit perspiciatis corporis nemo ea, ad in quis.</p>
-        <a href="#sectionB" class="btn">Read More</a>
+        <div class="contentWrap">
+            <h1>Welcome to Acme Web Solutions</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia temporibus rem officiis sit perspiciatis corporis nemo ea, ad in quis.</p>
+            <a href="#sectionB" class="btn">Read More</a>
+        </div>
     </header>
 
     <!-- MAin Area -->
@@ -22,7 +24,9 @@
         <section id="sectionA" class="grid">
             <div class="contentWrap">
                 <h2 class="contentTitle">Web & Application Development</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla fuga dolorum laboriosam eligendi vitae impedit reprehenderit deserunt eveniet? Reprehenderit expedita sint aliquam corrupti necessitatibus, dignissimos, ullam atque quibusdam earum consequuntur labore. Fugit nesciunt officia animi deserunt amet recusandae tempora ad!</p>
+                <div class="contentText">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla fuga dolorum laboriosam eligendi vitae impedit reprehenderit deserunt eveniet? Reprehenderit expedita sint aliquam corrupti necessitatibus, dignissimos, ullam atque quibusdam earum consequuntur labore. Fugit nesciunt officia animi deserunt amet recusandae tempora ad!</p>
+                </div>
             </div>
         </section>
         <!-- Section B -->
@@ -31,7 +35,7 @@
                 <li>
                     <div class="card">
                         <img src="images/coding.jpg" alt="">
-                        <div class="card-content">
+                        <div class="cardContent">
                             <h3 class="card-title">Web Development</h3>
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id hic voluptates dolor similique rem. Consequuntur ea laudantium quia obcaecati ipsum.</p>
                         </div>
@@ -40,7 +44,7 @@
                 <li>
                     <div class="card">
                         <img src="images/mobile.jpg" alt="">
-                        <div class="card-content">
+                        <div class="cardContent">
                             <h3 class="card-title">Mobile Applications</h3>
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id hic voluptates dolor similique rem. Consequuntur ea laudantium quia obcaecati ipsum.</p>
                         </div>
@@ -49,7 +53,7 @@
                 <li>
                     <div class="card">
                         <img src="images/marketing.jpg" alt="">
-                        <div class="card-content">
+                        <div class="cardContent">
                             <h3 class="card-title">Web Development</h3>
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id hic voluptates dolor similique rem. Consequuntur ea laudantium quia obcaecati ipsum.</p>
                         </div>
@@ -80,7 +84,7 @@
 
     <footer id="mainFooter" class="grid">
         <div>Acme Web Solutions</div>
-        <div>Project by Lewis Holmes (From Traversy Media)</div>
+        <div>Project by Lewis Holmes (<a href="#">From Traversy Media</a>)</div>
     </footer>
 </body>
 </html>
