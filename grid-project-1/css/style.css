@@ -36,8 +36,136 @@ p {
     margin: 0.5em 0;
 }
 
-.btn:hover {
-    background: #eaeaea;
-    color: #333;
+    .btn:hover {
+        background: #eaeaea;
+        color: #333;
+    }
+
+/* Header Showcase */
+
+#showcase{
+    min-height: 450px;
+    color: #FFF;
+    text-align: center;
 }
 
+    #showcase .bgImage {
+        position: absolute;
+        background: #333 url('../images/showcase.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 450px;
+        z-index: -1;
+        opacity: 0.4;
+    }
+
+    #showcase h1 {
+        padding-top: 100px;
+        padding-bottom: 0;
+    }
+
+    #showcase .contentWrap,
+    #sectionA .contentWrap {
+        padding: 0 1.5em;
+    }
+
+/* Section A */
+
+#sectionA {
+    background: #EAEAEA;
+    color: #333;
+    padding-bottom: 2em;
+}
+
+/* Section B */
+
+#sectionB {
+    padding: 2em 1em 1em;
+}
+
+    #sectionB ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    
+    #sectionB li {
+        margin-bottom: 1em;
+        background: #FFF;
+        color: #333
+    }
+
+.cardContent {
+    padding: 1.5em;
+}
+
+/* Section C */
+
+#sectionC {
+    background: #FFF;
+    color: #333;
+    padding: 2em;
+}
+
+/* Section D (Boxes) */
+
+#sectionD .box {
+    padding: 2em;
+    color: #FFF;
+}
+
+    #sectionD .box:first-child {
+        background: #2690D4;
+    }
+
+/* Footer */
+
+#mainFooter {
+    padding: 2em;
+    background: #000;
+    color: #FFF;
+    text-align: center;
+}
+
+    #mainFooter a {
+        color: #2690D4;
+        text-decoration: none;
+    }
+
+/* Media Query */
+
+@media(min-width: 700px) {
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
+    }
+
+    #sectionA .contentText{
+        columns: 2;
+        column-gap: 2em;
+    }
+
+    #sectionA .contentText p {
+        padding-top: 0;
+    }
+
+    .contentWrap, 
+    #sectionB ul {
+        grid-column: 2/4;
+    }
+
+    .box, #mainFooter div {
+        grid-column: span 2;
+    }
+
+    #sectionB ul {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    #sectionB li {
+        width: 31%;
+    }
+}
