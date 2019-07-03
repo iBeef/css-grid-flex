@@ -176,3 +176,35 @@ button {
 .overlayLeft {
     transform: translateX(-20%);
 }
+
+/* Animations */
+
+/* Move Sign in panel to the right */
+.container.rightPanelActive .signInContainer {
+    transform: translateX(100%);
+}
+
+/* Move overlay to the left */
+.container.rightPanelActive .overlayContainer {
+    transform: translateX(-100%);
+}
+
+/* Bring sign up over sign in */
+.container.rightPanelActive .signUpContainer {
+    transform: translateX(100%);
+    opacity: 1;
+    z-index: 5;
+}
+
+/* Move overlay back to the right */
+.container.rightPanelActive .overlay {
+    transform: translateX(50%)
+}
+
+.container.rightPanelActive .overlayLeft {
+    transform: translateX(0%);
+}
+
+.container.rightPanelActive .overlayRight {
+    transform: translateX(20%);
+}

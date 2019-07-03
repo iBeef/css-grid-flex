@@ -1,0 +1,92 @@
+body {
+    font-family: "Tahoma" sans-serif;
+    background: #333;
+    color: #fff;
+}
+
+h2 {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.col {
+    box-sizing: border-box;
+    padding: 8px;
+    flex-basis: 25%
+}
+
+.priceBox {
+    background: #fff;
+    color: #555;
+    list-style-type: none;
+    border: 1px solid #555;
+    margin: 0;
+    padding: 0;
+    transition: all 0.3;
+}
+
+    .priceBox.best {
+        box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.6);
+    }
+    .priceBox:hover {
+        box-shadow: 0 10px 15px 0 #000;
+    }
+
+    .priceBox .header {
+        background-color: #111;
+        color: #fff;
+        font-size: 25px;
+    }
+
+    .priceBox .header.bestHeader {
+        background-color: #4caf50;
+    }
+
+    .priceBox li {
+        padding: 20px;
+        border-bottom: 1px solid #eee;
+        text-align: center;
+    }
+
+    .priceBox .emph {
+        background-color: #f4f4f4;
+        font-size: 20px;
+    }
+
+.btn {
+    background-color: #4caf50;
+    border: none;
+    color: #fff;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+@media(max-width: 1200px) {
+    .col {
+        flex-basis: 33%
+    }
+}
+
+@media(max-width: 700px) {
+    .container {
+        flex-direction: column;
+        /* align-items: center; */
+    }
+    .col {
+        flex: 1;
+        margin: 0 1rem;
+        /* flex-basis: 80% */
+    }
+}
+
+@media(max-width: 500px) {
+    .col {
+        margin: 0 0.5rem;
+    }
+}
